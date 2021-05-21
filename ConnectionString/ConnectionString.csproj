@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GetingData\**" />
+    <Compile Remove="InsertingSQL\**" />
+    <Compile Remove="UpdatingSQL\**" />
+    <EmbeddedResource Remove="GetingData\**" />
+    <EmbeddedResource Remove="InsertingSQL\**" />
+    <EmbeddedResource Remove="UpdatingSQL\**" />
+    <None Remove="GetingData\**" />
+    <None Remove="InsertingSQL\**" />
+    <None Remove="UpdatingSQL\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
